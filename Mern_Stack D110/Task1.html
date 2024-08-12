@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>//task10
+        // while using "use strict" it shows referenceError to an undefined variable
+        //task1
+        alert("Hello,World!");
+        //task2
+        Number = 100;
+        String = "Hello world";
+        Boolean = true;
+        //task3
+        console.log(Number);
+        console.log(String);
+        console.log(Boolean);
+        console.log(Number+50);
+        //task4
+        a="Good";
+        b="Morning";
+        c=a+b;
+        console.log(c);
+        //task5
+       console.log(typeof a,typeof Boolean, typeof Number); 
+       //task6
+       //It is a Single line comment in which we can write our suggestions in single line
+       /*It is a Multiline comment 
+       where we can write our suggestions 
+       in multiple lines*/
+       //task7
+       console.log("are you okay?")
+       console.log("or not");
+       //task8
+       i=3,j=1;
+       while(i<5){
+        while(j<3){
+            console.log(j++);//1 2 
+        }
+        console.log(i++);//3 4
+       }
+       //task9
+       var x,y,z;
+       //member;
+       //console.log(typeof member);//error because of not defined
+       //task16
+       let first;var second;const THIRD="COLOR";
+       //task17
+       //const THIRD = "RED";// IT shows error because const is constant we cannot assign another value to the existing variable
+       //task18
+       var variable;
+       console.log(variable);//undefined
+       //task19
+       let num=7;
+       let st="Thala";
+       let bool=false;
+       console.log(typeof num,typeof st,typeof bool);//number string boolean
+       //task20
+       var user="peter";
+       var user="john";
+       console.log(user);//john
+       //task21
+       let nu=7;
+       let s="Thala";
+       let boolean=false;
+       //task22
+       console.log(typeof nu,typeof s,typeof boolean);//number string boolean
+       //task23
+       const symb = Symbol('id');
+       console.log(typeof symb);//symbol
+       //task24
+       var val = null;
+       console.log(typeof val);//object
+       //task25
+       //var = no block scope(we can declare in main function or other function with same variable there will be no error)
+       //let = block level scope
+       //task26
+       im='implicit';
+       im=im-7;
+       console.log(im);//Implicit
+       ex=100;
+       ex=BigInt(ex);
+       console.log(ex);//explicit
+       //task28
+       let add=10+20;let sub=20-10; let mul=2*3;let div=5/10;
+       console.log(add);console.log(sub);console.log(mul);console.log(div);
+       //task29
+       var p=4;
+       console.log(p++); console.log(p--); console.log(++p); console.log(--p);
+       //task31
+       var d = 5;var b = 10;
+       console.log(d>b);console.log(d<b);console.log(d>=b);console.log(d<=b);
+       //task32
+       if(7==7){
+        console.log('it is equality');
+       }
+       if('var'==='var'){
+        console.log('strict equality');
+       }
+       //task33
+       if('abcd'=='efgh'){
+        console.log('its true');
+       }
+       else{
+        console.log('its false');
+       }
+       //task34
+       if(8!=5){
+        console.log('inequality');
+       }
+       if(7!==3){
+        console.log('strict inequality');
+       }
+       //task35
+       if(null==undefined){
+        console.log('true');
+       }
+       if(null===undefined){
+        console.log('not true');
+       }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
