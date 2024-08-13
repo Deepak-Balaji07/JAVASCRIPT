@@ -119,6 +119,113 @@
        if(null===undefined){
         console.log('not true');
        }
+       //task36
+       if(num%2==0){
+        console.log("even");
+       }
+       else{
+        console.log("odd");
+       }
+       //task37
+       if(num>=0 || num<=0){
+        if(num>0){console.log("positive");}
+        if(num<0){console.log("negative");}
+        else{console.log("zero");}
+       }
+       //task38
+       age=10;
+       let welcome =(age>18)?console.log("major"):console.log("Minor");
+       //task39
+       valid=10;
+       let validity =(valid>18)?console.log("it's valid"):console.log("Not valid");
+       //task40
+       if(num==NaN){
+        num=10;
+        console.log(num);
+       }
+       else{
+        console.log("variable has its value");
+       }
+       //task41
+       if(num==NaN && num==undefined){
+        console.log('assign the value');
+       }
+       if(num ==bool || num  == Number){
+        console.log("it has the value");
+       }
+       if(num!=BigInt){ console.log('its not an bigint');}
+       //task42
+       if(num>0 && num<10){ console.log('num is within the range');}
+       if(num>0 || num<10){console.log("num is either within 10 or above 0");}
+       if(num%2!=0){console.log("its an odd number");}
+       //task43
+       bool=!boolean;
+       console.log(bool);
+       //task44
+       if((num>0)||(num>0 && num<7)){console.log("num is within the range of 0 to 7");}
+       //task45
+       if(num>5 || num<8){
+        console.log(num);
+       }
+       //task46
+       function sum(a,b){
+        return a+b;
+       }
+       console.log(sum(2,3));
+       //task47
+       function AreaofRectangle(l,b){
+        return l*b;
+       }
+       console.log(AreaofRectangle(3,6));
+       //task48
+       function nothing(){
+        return console.log("there is nothing");
+       }
+       nothing();
+       //task49
+       function no(){
+        return;
+       }
+       console.log(no());//undefined
+       //task50
+       a=7;
+       function differ(b){
+          return b+2;
+       }
+       console.log(differ(a));
+       //task51
+       const greet =(name)=>`Hello, ${name}!`;
+       console.log(greet("varun"));
+       console.log(greet("kumar"));
+       //task52
+       const addition =(a,b)=> {return a+b};
+       console.log(addition(4,5));console.log(addition(6,7));
+       //task53
+       const isEven = (num)=>{ 
+            if(num%2==0){return "true";}
+            else{return "false";}
+        }
+        console.log(isEven(24));console.log(isEven(25));
+        //task54
+        const maxValue = (n1,n2)=>{
+            if(n1>n2){ return n1;}
+            else{return n2;}
+        }
+        console.log(maxValue(50,46));console.log(maxValue(3,2));
+        //task55
+        let myObject={
+            value:10,
+            multiplyTraditional(num){
+                console.log("Traditional vlaue=",this);
+                return this.value*num;
+            },
+            multiplyArrow:(num)=>{
+                console.log("Arrow function=",this);
+                return this.value*num;
+            }
+        };
+        console.log(myObject.multiplyTraditional(2));
+        console.log(myObject.multiplyArrow(4));
     </script>
 </head>
 <body>
