@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //task1
+        const numbers = [5, 6, 7, 8, 9];
+        const squaredNumbers = numbers.map(x => x * x);
+        console.log("Task 1: Squared Numbers:", squaredNumbers);
+        //task2
+        const numbers2 = [1, 2, 4, 14, 6];
+        const evenNumbers = numbers2.filter(x => x % 2 === 0);
+        console.log("Task 2: Even Numbers:", evenNumbers)
+        //task3
+        const prices = [4.99, 5.99, 8.99, 3.99];
+        const totalPrice = prices.reduce((acc, current) => acc + current, 0);
+        console.log("Task 3: Total Price:", totalPrice);
+        //task4
+        const strings = ["Hi", "guys"];
+        const stringLengths = strings.map(x => x.length);
+        console.log("Task 4: String Lengths:", stringLengths);
+        //task5
+        const arr = [1, 2, 3, 4, 5];
+        arr.splice(2, 1, "replaced!");
+        console.log("Task 5: Spliced Array:", arr);
+        //task6
+        const arr2 = [1, 2, 3, 4, 5];
+        const slicedArr = arr2.slice(3, 4);
+        console.log("Task 6: Sliced Array:", slicedArr);
+        //task7
+        const names = ["Alice", "Eva", "Adam", "Imu"];
+        const namesStartingWithA = names.filter(x => x.startsWith("A"));
+        console.log("Task 7: Names Starting with A:", namesStartingWithA);
+        //task8
+        const scores = [85, 92, 78, 95, 88];
+        const grades = scores.map(x => {
+         if (x >= 90) return "A";
+        else if (x >= 80) return "B";
+        else return "C";
+        },)
+        //task9
+        const ages = [25, 30, 35, 20, 28]
+        const sum = ages.reduce((acc, current) => acc + current, 0);
+        const averageAge = sum / ages.length;
+        console.log("Task 9: Average Age:", averageAge); 
+        //task10
+        const fruits = ["apple", "banana", "orange", "grape"];
+        fruits.splice(2, 0, "mango", "pineapple");
+        console.log("Task 10: Fruits Array:", fruits);
+    console.log("Task 8: Grades:", grades);
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //task1
+        let book ={
+            title:"The Lord of the Rings",
+            author:"J.R.R.Tolkien",
+            yearPublished:1937,
+            getSummary(){
+                return [this.title,this.author,this.yearPublished];
+            }
+        };
+        console.log(book.getSummary());
+        //task2
+        book.age=function(){
+            const curYear = new Date().getFullYear();
+            return curYear-this.yearPublished;
+        }
+        console.log(`${book.age()}`);
+        //task3 and //task4
+        let calculator={
+            history: [],
+            add(a,b){
+                  const add = a+b;
+                  this.history.push(`Added value is=${add}`);
+                  return add        
+            },
+            subtraction(a,b){
+                   const sub = a-b;
+                   this.history.push(`Subbtracted value is=${sub}`);
+                   return sub
+            },
+            multiplication(a,b){
+                   const mul = a*b
+                   this.history.push(`Multiplicated value is =${mul}`);
+                   return mul
+            },
+            div(a,b){
+                if(b!=0){
+                const div = a/b
+                this.history.push(`divided value is =${div}`);
+                return div;}
+                else{
+                    console.log("0 cannot be divided when its in denominator");
+                    return NaN;
+                }
+            }
+
+        };
+        console.log(calculator.add(10,5));
+        console.log(calculator.subtraction(10,5));
+        console.log(calculator.multiplication(10,5));
+        console.log(calculator.div(10,5));
+        console.log(calculator.history);
+        //task5 and task6
+        let person = {
+            name : "vikram",
+            age :30,
+            IncreaseAge(){
+                this.age++;
+            },
+            DecreaseAge(){
+                if(this.age>0){
+                this.age--;
+                }
+            },
+            greet(){
+                return `the name is ${this.name}`;
+            }
+        }
+        person.IncreaseAge()
+        person.DecreaseAge()
+        console.log(person.age);
+        console.log(person.greet());
+        //task7 and task8
+        let circle={
+            radius:4,
+            calculateArea(){
+                return Math.PI * Math.pow(this.radius, 2)
+            },
+            calculateDiamter(){
+                return this.radius*2;
+            },
+            calculateCircumference(){
+                return 2*Math.PI*this.radius;
+            }
+        };
+        console.log(circle.calculateArea());
+        console.log(circle.calculateDiamter());
+        console.log(circle.calculateCircumference());
+        //task9 and task10
+        let account={
+            name:"John",
+            balance:10000,
+            deposit(){
+                const deposit=4000;
+                this.balance+=deposit;
+                return `the deposited amount is${deposit}`;
+            },
+            withdraw(){
+                if(this.balance>0){
+                const withdraw = 2000;
+                this.balance-=withdraw;
+                return `the withdrawal amount is${withdraw}`;
+                }
+                else{
+                    return `cannot able to withdraw due to insufficient balance`;
+                }
+            },
+        };
+        console.log(account.deposit());
+        console.log(account.withdraw());
+        console.log(account.balance);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
